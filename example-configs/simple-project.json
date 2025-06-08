@@ -1,0 +1,13 @@
+{
+  "langDir": "lang",
+  "sourceLanguage": "pt-pt",
+  "languages": {
+    "pt-pt": "European Portuguese",
+    "en-us": "American English"
+  },
+  "verification": {
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"],
+    "extensions": [".js", ".ts"]
+  }
+}

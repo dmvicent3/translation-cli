@@ -1,0 +1,14 @@
+{
+  "langDir": "assets/translations",
+  "sourceLanguage": "pt-pt",
+  "languages": {
+    "pt-pt": "European Portuguese",
+    "en-us": "American English",
+    "de-de": "German"
+  },
+  "verification": {
+    "include": ["src", "screens", "components"],
+    "exclude": ["node_modules", "android", "ios", "__tests__"],
+    "extensions": [".js", ".jsx", ".ts", ".tsx"]
+  }
+}

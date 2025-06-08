@@ -1,0 +1,75 @@
+{
+  "name": "@dmvicent3/translation-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for managing translations with Google Gemini AI",
+  "type": "module",
+  "main": "src/translation.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "tcli": "./scripts/translate.js",
+    "tcli-batch": "./scripts/batch-translate.js",
+    "tcli-check": "./scripts/check-translations.js",
+    "tcli-rename": "./scripts/rename-translation.js",
+    "tcli-remove": "./scripts/remove-translation.js",
+    "tcli-add": "./scripts/add-language.js",
+    "tcli-scan": "./scripts/scan-usage.js"
+  },
+  "scripts": {
+    "translate": "node scripts/translate.js",
+    "batch-translate": "node scripts/batch-translate.js",
+    "check-translations": "node scripts/check-translations.js",
+    "rename-translation": "node scripts/rename-translation.js",
+    "remove-translation": "node scripts/remove-translation.js",
+    "add-language": "node scripts/add-language.js",
+    "scan-usage": "node scripts/scan-usage.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "prepublishOnly": "npm test",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "ai": "^4.0.0",
+    "@ai-sdk/google": "^1.0.0",
+    "dotenv": "^16.0.0",
+    "inquirer": "^9.2.7"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "jest": "^29.7.0",
+    "semantic-release": "^24.0.0"
+  },
+  "keywords": [
+    "translation",
+    "cli",
+    "i18n",
+    "gemini",
+    "ai",
+    "internationalization",
+    "localization",
+    "l10n",
+    "next-translate",
+    "json-translations"
+  ],
+  "author": "dmvicent3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmvicent3/translation-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dmvicent3/translation-cli/issues"
+  },
+  "homepage": "https://github.com/dmvicent3/translation-cli#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "src",
+    "scripts",
+    "LICENSE",
+    "README.md"
+  ]
+}

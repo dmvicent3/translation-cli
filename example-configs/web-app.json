@@ -1,0 +1,17 @@
+{
+  "langDir": "src/i18n",
+  "sourceLanguage": "en-us",
+  "languages": {
+    "en-us": "American English",
+    "pt-pt": "European Portuguese",
+    "pt-br": "Brazilian Portuguese",
+    "es-es": "Spanish (Spain)",
+    "fr-fr": "French",
+    "it-it": "Italian"
+  },
+  "verification": {
+    "include": ["src", "components", "pages"],
+    "exclude": ["node_modules", "dist", "build", ".next", "test", "tests"],
+    "extensions": [".js", ".jsx", ".ts", ".tsx"]
+  }
+}
