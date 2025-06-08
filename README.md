@@ -16,7 +16,6 @@ Designed with next-translate in mind but compatible with any translation system 
 ## Installation
 
 ```bash
-# Install globally
 npm install -g @dmvicent3/translation-cli
 ```
 
