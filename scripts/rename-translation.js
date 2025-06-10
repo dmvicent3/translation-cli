@@ -13,17 +13,17 @@ async function main() {
 🔄 Rename Translation
 
 Usage: 
-  rename-translation <old-key> <new-key> [options]
-  rename-translation --interactive
+  tcli-rename <old-key> <new-key> [options]
+  tcli-rename --interactive
 
 Options:
   --force        Force rename even if new key already exists
   --interactive  Interactive mode to select and rename keys
 
 Examples: 
-  rename-translation "button.submit" "button.send"
-  rename-translation "user.name" "user.fullName" --force
-  rename-translation --interactive
+  tcli-rename "button.submit" "button.send"
+  tcli-rename "user.name" "user.fullName" --force
+  tcli-rename --interactive
 
 Description:
   Renames a translation key across all configured languages.
@@ -102,7 +102,7 @@ Description:
 
       if (!oldKey || !newKey) {
         console.error('❌ Both old key and new key are required')
-        console.log('Usage: rename-translation <old-key> <new-key>')
+        console.log('Usage: tcli-rename <old-key> <new-key>')
         process.exit(1)
       }
 

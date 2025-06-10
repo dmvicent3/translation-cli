@@ -15,8 +15,8 @@ async function main() {
 🔍 Translation Usage Scanner
 
 Usage: 
-  scan-usage [options]
-  scan-usage --dir <path> [options]
+  tcli-scan [options]
+  tcli-scan --dir <path> [options]
 
 Options:
   --dir <path>       Directory to scan (default: current directory)
@@ -27,11 +27,11 @@ Options:
   --output <file>    Save report to file
 
 Examples: 
-  scan-usage                                    # Scan using config settings
-  scan-usage --dir src/                         # Scan specific directory
-  scan-usage --detailed                         # Show all unused keys with values
-  scan-usage --show-used                        # Also show used keys
-  scan-usage --report --json --output usage.json # Generate JSON report
+  tcli-scan                                    # Scan using config settings
+  tcli-scan --dir src/                         # Scan specific directory
+  tcli-scan --detailed                         # Show all unused keys with values
+  tcli-scan --show-used                        # Also show used keys
+  tcli-scan --report --json --output usage.json # Generate JSON report
 
 Configuration:
   Configure scan settings in your .translation-cli.json:

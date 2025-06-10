@@ -375,7 +375,7 @@ export async function generateMissingKeysJSON(config, targetLanguage) {
       config.languages[config.sourceLanguage]
     } to ${config.languages[targetLanguage]}`
   )
-  console.log(`   3. Run: batch-translate your-file.json`)
+  console.log(`   3. Run: tcli-batch your-file.json`)
 
   return sortedMissingTranslations
 }
@@ -667,9 +667,9 @@ export async function addNewLanguage(
     )
     console.log('')
     console.log('💡 To translate all keys automatically, run:')
-    console.log(`   check-translations --json ${langCode}`)
+    console.log(`   tcli-check --json ${langCode}`)
     console.log(
-      `   # Then translate the JSON and run: batch-translate your-file.json`
+      `   # Then translate the JSON and run: tcli-batch your-file.json`
     )
 
     return {

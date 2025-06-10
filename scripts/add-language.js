@@ -14,18 +14,18 @@ async function main() {
 🌍 Add New Language
 
 Usage: 
-  add-language <language-code> <language-name> [options]
-  add-language --interactive
+  tcli-add <language-code> <language-name> [options]
+  tcli-add --interactive
 
 Options:
   --no-translate    Don't automatically translate from source language
   --interactive     Interactive mode to add language
 
 Examples: 
-  add-language "de-de" "German"
-  add-language "fr-fr" "French"
-  add-language "it-it" "Italian" --no-translate
-  add-language --interactive
+  tcli-add "de-de" "German"
+  tcli-add "fr-fr" "French"
+  tcli-add "it-it" "Italian" --no-translate
+  tcli-add --interactive
 
 Description:
   Adds a new language to your translation project and automatically:
@@ -124,7 +124,7 @@ Description:
 
       if (!langCode || !languageName) {
         console.error('❌ Both language code and language name are required')
-        console.log('Usage: add-language <language-code> <language-name>')
+        console.log('Usage: tcli-add <language-code> <language-name>')
         process.exit(1)
       }
 

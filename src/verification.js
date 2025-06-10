@@ -129,7 +129,7 @@ export async function verifyTranslations(config, options = {}) {
     console.log('')
     console.log('💡 Suggestions:')
     console.log('   - Run with --detailed to see all missing keys')
-    console.log('   - Use translate command to add missing translations')
+    console.log('   - Use tcli command to add missing translations')
     console.log(
       '   - Consider removing extra keys or adding them to other languages'
     )

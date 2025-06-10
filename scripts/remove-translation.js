@@ -13,17 +13,17 @@ async function main() {
 🗑️  Remove Translation
 
 Usage: 
-  remove-translation <key> [options]
-  remove-translation --interactive
+  tcli-remove <key> [options]
+  tcli-remove --interactive
 
 Options:
   --force        Skip confirmation prompt
   --interactive  Interactive mode to select and remove keys
 
 Examples: 
-  remove-translation "button.old"
-  remove-translation "deprecated.feature" --force
-  remove-translation --interactive
+  tcli-remove "button.old"
+  tcli-remove "deprecated.feature" --force
+  tcli-remove --interactive
 
 Description:
   Removes a translation from all configured languages.
@@ -82,7 +82,7 @@ Description:
 
       if (!keyToRemove) {
         console.error('❌ Translation key is required')
-        console.log('Usage: remove-translation <key>')
+        console.log('Usage: tcli-remove <key>')
         process.exit(1)
       }
     }

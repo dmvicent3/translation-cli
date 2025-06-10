@@ -270,7 +270,7 @@ export async function scanUnusedTranslations(config, options = {}) {
 
     console.log('💡 Suggestions:')
     console.log('   - Review unused keys and remove if no longer needed')
-    console.log('   - Use remove-translation command to clean up')
+    console.log('   - Use tcli-remove command to clean up')
     console.log('   - Some keys might be used dynamically (not detected)')
   } else {
     console.log('🎉 All translation keys are being used!')

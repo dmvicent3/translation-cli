@@ -14,7 +14,8 @@
     "tcli-rename": "./scripts/rename-translation.js",
     "tcli-remove": "./scripts/remove-translation.js",
     "tcli-add": "./scripts/add-language.js",
-    "tcli-scan": "./scripts/scan-usage.js"
+    "tcli-scan": "./scripts/scan-usage.js",
+    "tcli-verify": "./scripts/verify.js"
   },
   "scripts": {
     "translate": "node scripts/translate.js",

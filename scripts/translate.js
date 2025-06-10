@@ -14,19 +14,19 @@ async function main() {
 🌍 Translation CLI Tool
 
 Usage: 
-  translate <key> <source_text> [options]
-  translate --list [language]
-  translate --init
-  translate --config
+  tcli <key> <source_text> [options]
+  tcli --list [language]
+  tcli --init
+  tcli --config
 
 Examples: 
-  translate "button.submit" "Submeter"
-  translate "errors.validation.required" "Este campo é obrigatório"
-  translate "welcome.message" "Bem-vindo" --force
-  translate --list
-  translate --list en-us
-  translate --init
-  translate --config
+  tcli "button.submit" "Submeter"
+  tcli "errors.validation.required" "Este campo é obrigatório"
+  tcli "welcome.message" "Bem-vindo" --force
+  tcli --list
+  tcli --list en-us
+  tcli --init
+  tcli --config
 
 Options:
   --force       Force overwrite existing translations without prompting
@@ -54,9 +54,9 @@ Example .translation-cli.json:
   }
 
 Related Commands:
-  check-translations            # Check for missing translation keys
-  batch-translate file.json     # Add multiple translations from JSON
-  scan-usage                    # Scan for unused translation keys
+  tcli-check            # Check for missing translation keys
+  tcli-batch file.json  # Add multiple translations from JSON
+  tcli-scan             # Scan for unused translation keys
 `)
     process.exit(1)
   }
@@ -79,7 +79,7 @@ Related Commands:
     validateConfig(config)
   } catch (error) {
     console.error(`❌ Configuration error: ${error.message}`)
-    console.log("Run 'translate --init' to create a default configuration file")
+    console.log("Run 'tcli --init' to create a default configuration file")
     process.exit(1)
   }
 
@@ -140,7 +140,7 @@ Related Commands:
       '❌ GOOGLE_GENERATIVE_AI_API_KEY environment variable is required'
     )
     console.log('Get your API key from: https://aistudio.google.com/app/apikey')
-    console.log("Or run 'translate --init' to set up your API key")
+    console.log("Or run 'tcli --init' to set up your API key")
     process.exit(1)
   }
 

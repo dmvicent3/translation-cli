@@ -17,10 +17,10 @@ async function main() {
 🔍 Translation Verification Tool
 
 Usage: 
-  check-translations [options]
-  check-translations --report [options]
-  check-translations --incomplete
-  check-translations --json <language>
+  tcli-check [options]
+  tcli-check --report [options]
+  tcli-check --incomplete
+  tcli-check --json <language>
 
 Options:
   --detailed     Show all missing keys (not just summary)
@@ -31,13 +31,13 @@ Options:
   --output <file> Save report to file
 
 Examples: 
-  check-translations                           # Basic verification
-  check-translations --detailed                # Show all missing keys
-  check-translations --report                  # Generate completeness report
-  check-translations --report --json-format    # Generate JSON report
-  check-translations --incomplete              # Check against source language
-  check-translations --json pt-br              # Generate JSON for Portuguese (Brazil)
-  check-translations --report --output report.json --json-format  # Save JSON report to file
+  tcli-check                           # Basic verification
+  tcli-check --detailed                # Show all missing keys
+  tcli-check --report                  # Generate completeness report
+  tcli-check --report --json-format    # Generate JSON report
+  tcli-check --incomplete              # Check against source language
+  tcli-check --json pt-br              # Generate JSON for Portuguese (Brazil)
+  tcli-check --report --output report.json --json-format  # Save JSON report to file
 
 Description:
   This tool verifies that all translation keys exist across all configured

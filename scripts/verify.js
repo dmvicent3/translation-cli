@@ -18,10 +18,10 @@ async function main() {
 🔍 Translation Verification Tool
 
 Usage: 
-  verify [options]
-  verify --report [options]
-  verify --incomplete
-  verify --json <language>
+  tcli-verify [options]
+  tcli-verify --report [options]
+  tcli-verify --incomplete
+  tcli-verify --json <language>
 
 Options:
   --detailed     Show all missing keys (not just summary)
@@ -32,13 +32,13 @@ Options:
   --output <file> Save report to file
 
 Examples: 
-  verify                           # Basic verification
-  verify --detailed                # Show all missing keys
-  verify --report                  # Generate completeness report
-  verify --report --json-format    # Generate JSON report
-  verify --incomplete              # Check against source language
-  verify --json pt-br              # Generate JSON for Portuguese (Brazil)
-  verify --report --output report.json --json-format  # Save JSON report to file
+  tcli-verify                           # Basic verification
+  tcli-verify --detailed                # Show all missing keys
+  tcli-verify --report                  # Generate completeness report
+  tcli-verify --report --json-format    # Generate JSON report
+  tcli-verify --incomplete              # Check against source language
+  tcli-verify --json pt-br              # Generate JSON for Portuguese (Brazil)
+  tcli-verify --report --output report.json --json-format  # Save JSON report to file
 
 Description:
   This tool verifies that all translation keys exist across all configured
